@@ -1,0 +1,251 @@
+<!doctype html>
+<!--
+  ============================================================================
+  ARQUIVO INTERNO ATE PREENCHER OS CAMPOS DESTACADOS EM AMARELO NO CORPO.
+  Gerado a partir de docs/POLITICA_PRIVACIDADE.md (rascunho LGPD, Sprint S26).
+  Nao e aconselhamento juridico: um advogado/DPO deve revisar antes de publicar.
+
+  CHECKLIST ANTES DE PUBLICAR (interno, nao aparece na pagina):
+  * Preencher todos os campos destacados (responsavel, e-mail, data). Sao os
+    trechos <mark> no corpo; remover as tags <mark> depois de preencher.
+  * Advogado/DPO revisou o texto final.
+  * Hospedar numa URL publica (GitHub Pages serve; instrucoes no fim deste
+    arquivo) e linkar a URL na ficha da Google Play E dentro do app.
+  * Confirmar a base legal escolhida por item com o revisor juridico.
+  * Se um dia entrar anuncio, analytics de terceiros ou compra no app, ESTA
+    politica precisa ser revisada ANTES da mudanca ir ao ar.
+  ============================================================================
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Aurins: Seed &amp; Kin</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #fafaf7;
+    color: #26221c;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.65;
+    -webkit-text-size-adjust: 100%;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin: 0 0 0.25rem;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin: 2rem 0 0.5rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid #ddd8ce;
+  }
+  h3 {
+    font-size: 1rem;
+    margin: 1.25rem 0 0.25rem;
+  }
+  p, ul { margin: 0.5rem 0 1rem; }
+  ul { padding-left: 1.35rem; }
+  li { margin-bottom: 0.35rem; }
+  .meta {
+    font-size: 0.95rem;
+    color: #55503f;
+    margin-bottom: 1.5rem;
+  }
+  .meta p { margin: 0.15rem 0; }
+  mark {
+    background: #ffe08a;
+    padding: 0 0.3em;
+    border-radius: 3px;
+    font-weight: 600;
+  }
+  strong { color: #1d1a14; }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd8ce;
+    font-size: 0.85rem;
+    color: #77705e;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Política de Privacidade</h1>
+<p class="meta"><strong>Aurins: Seed &amp; Kin</strong></p>
+
+<div class="meta">
+  <p><strong>Última atualização:</strong> 30 de outubro de 2026</p>
+  <p><strong>Responsável pelo tratamento:</strong> Luis Augusto Affonso Lanzi ("nós")</p>
+  <p><strong>Contato do encarregado (DPO/canal LGPD):</strong> <a href="mailto:admin@sgaragegame.com">admin@sgaragegame.com</a></p>
+</div>
+
+<h2 id="visao-geral">1. Visão geral</h2>
+<p>
+Aurins: Seed &amp; Kin ("o jogo") é um jogo mobile single-player, gratuito e
+<strong>jogável offline</strong>. Ele tem recursos sociais <strong>opcionais</strong> (perfil,
+Torre de Treinadores, mural, ranking, amizades, save na nuvem) que, quando usados, trocam dados com nosso
+provedor de backend (Supabase). Esta política explica quais dados tratamos, por quê, e seus
+direitos sob a <strong>LGPD (Lei 13.709/2018)</strong>.
+</p>
+<p>
+<strong>Não exibimos anúncios. Não usamos SDKs de publicidade ou de analytics de
+terceiros.</strong> As métricas de balanceamento do jogo ("telemetria") ficam
+<strong>apenas no seu aparelho</strong> e nunca são enviadas a nós.
+</p>
+
+<h2 id="dados">2. Dados que tratamos</h2>
+
+<h3>2.1. Modo convidado (padrão — sem cadastro)</h3>
+<p>
+Ao usar os recursos online, o jogo cria uma <strong>conta anônima</strong> no Supabase: um
+identificador técnico aleatório (UID), sem nome, e-mail ou qualquer dado pessoal seu. Um
+contador local de tentativas (anti-abuso) fica só no aparelho.
+</p>
+
+<h3>2.2. Conta por e-mail (opcional)</h3>
+<p>
+Se você optar por criar uma conta para sincronizar o progresso entre aparelhos, tratamos:
+</p>
+<ul>
+  <li><strong>E-mail e senha</strong> (a senha é gerida pelo provedor de autenticação; nós não a
+  armazenamos em texto). Base legal: <strong>execução de contrato</strong> (art. 7º, V) —
+  prestar o serviço de save na nuvem.</li>
+</ul>
+
+<h3>2.3. Perfil público (ao usar recursos sociais)</h3>
+<p>
+Quando você usa Torre de Treinadores/Mural/Perfil/Amizades, publicamos um "instantâneo" do seu perfil,
+visível a outros jogadores:
+</p>
+<ul>
+  <li><strong>Nome de jogador</strong> (escolhido por você — não exigimos nome real; filtro de
+  palavrão aplicado);</li>
+  <li><strong>Aparência do personagem</strong> e cosméticos equipados;</li>
+  <li><strong>Números de progresso</strong> (nº de Aurins, andar recorde da Masmorra, andar recorde da
+  Torre de Treinadores, liga);</li>
+  <li><strong>Snapshot do time</strong> (dados de jogo dos seus Aurins).</li>
+</ul>
+<p>
+Base legal: <strong>legítimo interesse</strong> (art. 7º, IX) em oferecer a funcionalidade
+social que você escolheu usar. Você controla o que publica e pode renomear-se ou remover posts.
+</p>
+
+<h3>2.4. Save na nuvem (opcional, só com conta)</h3>
+<p>
+O arquivo de save do jogo (progresso, coleção, itens — <strong>sem dados pessoais além do nome
+de jogador</strong>) é armazenado vinculado à sua conta. Base legal:
+<strong>execução de contrato</strong>.
+</p>
+
+<h3>2.5. Dados no aparelho</h3>
+<p>
+Save local, preferências (som/controles) e telemetria de balanceamento ficam <strong>no seu
+dispositivo</strong> e não são coletados por nós.
+</p>
+
+<h2 id="compartilhamento">3. Com quem compartilhamos</h2>
+<ul>
+  <li><strong>Supabase</strong> (provedor de backend/banco de dados) — processador que hospeda
+  auth, perfis, saves e rankings. Ver a política de privacidade da Supabase Inc.</li>
+  <li><strong>Outros jogadores</strong> — veem apenas o seu <strong>perfil público</strong>
+  (item 2.3), nunca seu e-mail.</li>
+  <li><strong>Google Play</strong> — distribui o app; não recebe de nós dados além dos exigidos
+  pela loja.</li>
+</ul>
+<p>Não vendemos dados. Não há transferência para fins de publicidade.</p>
+
+<h2 id="exclusao">4. Retenção e exclusão de dados (incluindo exclusão de conta)</h2>
+<ul>
+  <li>Convidado: os dados anônimos persistem enquanto a conta técnica existir.</li>
+  <li>Com conta: mantemos enquanto a conta estiver ativa. O jogo tem a opção
+  <strong>"Excluir conta"</strong> (dentro do app), que <strong>apaga o seu save na nuvem e
+  desvincula o progresso</strong> (o save local pode ser apagado em "Recomeçar do zero"). Para
+  exclusão completa ou dúvidas, contate <a href="mailto:admin@sgaragegame.com">admin@sgaragegame.com</a> — atenderemos pedidos
+  de exclusão de conta e dos dados associados também por esse canal, sem necessidade de
+  reinstalar o app.</li>
+</ul>
+
+<h2 id="direitos">5. Seus direitos (LGPD art. 18)</h2>
+<p>
+Você pode solicitar: confirmação de tratamento, acesso, correção, anonimização/eliminação,
+portabilidade e informação sobre compartilhamento. Canal:
+<a href="mailto:admin@sgaragegame.com">admin@sgaragegame.com</a>. Responderemos nos prazos legais.
+</p>
+
+<h2 id="criancas">6. Crianças e adolescentes</h2>
+<p>
+O jogo pode atrair público infantojuvenil. Não coletamos intencionalmente dados pessoais de
+crianças além do mínimo técnico dos recursos sociais opcionais, e o nome de jogador é filtrado.
+<strong>Recomendamos supervisão dos pais/responsáveis</strong>; recursos sociais são opcionais e
+podem ser evitados jogando como convidado offline. Tratamento de dados de menores observa o
+<strong>melhor interesse</strong> (LGPD art. 14). Responsáveis podem solicitar exclusão por
+<a href="mailto:admin@sgaragegame.com">admin@sgaragegame.com</a>.
+</p>
+
+<h2 id="seguranca">7. Segurança</h2>
+<p>
+Acesso ao banco protegido por <strong>Row Level Security</strong> (cada jogador só escreve os
+próprios dados; leitura pública limitada ao perfil social). Comunicação por HTTPS. Rate-limit
+anti-abuso.
+</p>
+
+<h2 id="alteracoes">8. Alterações</h2>
+<p>
+Podemos atualizar esta política; a data no topo indica a última revisão. Mudanças relevantes
+serão comunicadas na ficha da loja ou no app.
+</p>
+
+<h2 id="contato">9. Contato</h2>
+<p>
+Dúvidas ou solicitações LGPD: <strong><a href="mailto:admin@sgaragegame.com">admin@sgaragegame.com</a></strong>.
+</p>
+
+<footer>
+  <p>Aurins: Seed &amp; Kin — política de privacidade.</p>
+</footer>
+
+</main>
+</body>
+<!--
+  ============================================================================
+  INSTRUCOES DE PUBLICACAO (interno, nao aparece na pagina)
+
+  A Google Play exige uma URL PUBLICA para a politica. O repo do jogo
+  (github.com/gusbans/Aurins) e PRIVADO, e o GitHub Pages gratuito so funciona
+  em repositorio PUBLICO (em repo privado, Pages exige plano pago e ainda
+  assim o site publicado fica aberto ao mundo). Duas opcoes:
+
+  OPCAO A (recomendada): repo publico separado, gratuito, "aurins-privacidade"
+  So a politica vai a publico; o codigo do jogo continua privado.
+    1. Criar o repositorio publico: github.com/gusbans/aurins-privacidade
+    2. Copiar ESTE arquivo (index.html) para a RAIZ do novo repo (ja com os
+       campos destacados preenchidos e as tags <mark> removidas).
+    3. No repo novo: Settings > Pages > "Build and deployment" >
+       Source: "Deploy from a branch" > Branch: main, pasta: / (root) > Save.
+    4. Aguardar ~1 minuto. URL resultante:
+       https://gusbans.github.io/aurins-privacidade/
+    5. Colar essa URL na ficha da Play (App content > Privacy policy) e no app.
+
+  OPCAO B (nao recomendada): tornar o repo Aurins publico e servir /docs
+  Exporia todo o codigo-fonte do jogo. Se um dia fizer sentido:
+    1. Settings > Pages > Source: "Deploy from a branch" > Branch: main,
+       pasta: /docs > Save.
+    2. URL resultante: https://gusbans.github.io/Aurins/privacidade/
+       (o Pages serve docs/privacidade/index.html nesse caminho).
+
+  Depois de publicar, testar a URL num celular (aba anonima) antes de colar
+  na ficha da Play.
+  ============================================================================
+-->
+</html>
